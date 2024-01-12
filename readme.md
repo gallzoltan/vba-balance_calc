@@ -8,16 +8,17 @@ The `BalanceCalculator` class is designed to calculate the current balance based
 
 First, create an instance of the `BalanceCalculator` class and set the `monthName` and `rowNumber` properties:
 
-'''vba
+```vba
 Dim calc As New BalanceCalculator
 calc.monthName = "Január"
 calc.rowNumber = 1
-'''
+```
+
 Then, call the `CurrentBalance` method to calculate the balance:
 
-'''vba
+```vba
 Debug.Print calc.CurrentBalance()
-'''
+```
 
 ## Methods
 ### CurrentBalance
