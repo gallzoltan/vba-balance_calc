@@ -57,20 +57,6 @@ Private Function SumFromFirstNegative(values() As Variant) As Variant
   Dim foundNegative As Boolean
   sum = 0
   
-'  Dim negativeSum As Variant
-'  negativeSum = 0
-'  For i = LBound(values) To UBound(values)
-'    If values(i) < 0 Then
-'      negativeSum = negativeSum + values(i)
-'    ElseIf negativeSum < 0 Then
-'      sum = sum + values(i)
-'      If sum > 0 Then
-'        sum = 0
-'      End If
-'    End If
-'  Next i
-'  SumFromFirstNegative = IIf(sum < 0, 0, sum)
-
   foundNegative = False
 
   For i = LBound(values) To UBound(values)
