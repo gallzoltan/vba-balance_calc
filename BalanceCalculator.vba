@@ -74,10 +74,10 @@ Private Function SumFromFirstNegative(values() As Variant) As Variant
   
   If sum = 0 And Not foundNegative Then
     SumFromFirstNegative = values(UBound(values))
-  ElseIf sum = 0 And foundNegative Then
-    SumFromFirstNegative = 0
-  ElseIf sum < 0 Then
-    SumFromFirstNegative = 0
+  'ElseIf sum = 0 And foundNegative Then
+  '  SumFromFirstNegative = 0
+  'ElseIf sum < 0 Then
+  '  SumFromFirstNegative = 0
   Else
     SumFromFirstNegative = sum
   End If
